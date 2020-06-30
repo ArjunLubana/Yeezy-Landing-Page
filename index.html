@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adidas Online Store| Home Page</title>
 
-    <link href="https://css.gg/css?=|menu-motion|profile|search|shopping-cart|close" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
+        <div class="background"></div>
         <i class="gg-menu-motion" onclick="toggleMenu()"></i>
 
         <div class="logo">
             <img src="images/logo2.png" alt="logo">
         </div>
-
         <nav id="nav">
             <i class="gg-close" onclick="toggleMenuOff()"></i>
             <img class="nav-logo" src="images/logo.png" alt="logo2">
@@ -50,18 +50,31 @@
             <div class="product-info">
                 <h1> YEEZY BOOST 350 V2</h1>
                 <p>New and Improved</p>
-                <h2>$230</h2>
-                <div class="info bins">
-                    <a href="#" class="btn-discover-btn">DISCOVER</a>
-                    <a href="#" class="btn-discover-btn">ADD TO CART</a>
-                </div>
-            </div>
-
-            <div class="tone-2">
-                <img src="images/1.png" alt="shoe">
             </div>
         </div>
+
+        <div class="tone-2">
+            <img id = "main-image" src="images/image1.png" alt="shoe">
+        </div>
+
+        <div class="shoe-gallery">
+            <img onclick="imageToggle('image1')" id = "image1" src="images/image1.png" alt="shoe">
+            <img onclick="imageToggle('image2')" id = "image2" src="images/image2.png" alt="shoe">
+            <img onclick="imageToggle('image3')" id = "image3" src="images/image3.png" alt="shoe">
+            <img onclick="imageToggle('image4')" id = "image4" src="images/image4.png" alt="shoe">
+        </div>
+
+        <div class="info-bins">
+            <h2>$230</h2><br>
+            <a href="#" class="btn-discover-btn"><i class="gg-shopping-cart"></i>ADD TO CART</a>
+            <a href="#" class="btn-discover-btn">DISCOVER</a>
+        </div>
+
     </section>
+
+    <footer>
+        
+    </footer>
 </body>
 <script src="scripts/script.js"></script>
 
