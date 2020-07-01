@@ -38,8 +38,8 @@ header {
   background: white;
   filter: blur(10px);
 }
-/* Navigation */
 
+/* Navigation */
 nav {
   background-color: white;
   position: absolute;
@@ -83,9 +83,6 @@ nav {
   font-weight: 500;
   text-transform: uppercase;
 }
-.gg-search {
-  color: var(--content-color);
-}
 .search-cont {
   margin-bottom: 1rem;
 }
@@ -101,20 +98,37 @@ nav {
 
 /* ***** MAIN PAGE ***** */
 
-.main {
-  display: block;
-}
+/* Main Product Image */
 
 .tone-1 {
   text-align: center;
   margin: 2em;
-  font-size: 20px;
 }
 
 .tone-2 img {
   width: 100%;
   height: auto;
 }
+
+/* Shoe Gallery */
+.shoe-gallery {
+  margin: 2em;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shoe-gallery img {
+  border: 0 solid;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.shoe-gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Price and Cart Buttons */
 
 .info-bins {
   display: flex;
@@ -129,28 +143,10 @@ nav {
   text-decoration: none;
   background-color: var(--content-color);
   justify-content: space-between;
-  padding: 0.5em 1em;
-  margin: 0.5em;
-  border-radius: 5px;
+  padding: 1em 2em;
+  margin: 1em;
+  border-radius: 10px;
   color: white;
-}
-
-.shoe-gallery {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-}
-
-.shoe-gallery img {
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-.shoe-gallery img:hover {
-  transform: scale(1.1);
-}
-
-.active-image {
-  opacity: 0.7;
 }
 
 /* ***** FOOTER ***** */
@@ -159,39 +155,89 @@ footer {
   margin-top: 2em;
   padding: 1em;
   background-color: var(--content-color);
-  color:white;
+  color: white;
   text-align: center;
 }
 
-
-.footer-pages{
+.footer-pages {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  
 }
 
-.footer-pages a{
-  text-decoration:none;
-  color:white;
+.footer-pages a {
+  text-decoration: none;
+  color: white;
   line-height: 2em;
 }
-.footer-pages a:hover{
+footer a:hover {
   color: yellow;
 }
 
-.footer-links{
+.footer-links {
   display: flex;
   justify-content: space-evenly;
 }
 
-.footer-links a{
-  color:white;
+.footer-links a {
+  color: white;
 }
 
-.footer-links a:hover{
-  color:yellow;
-}
-
-.copyright{
+.copyright {
   font-size: 0.7em;
 }
+
+/* ***** MEDIA QUERIES ***** */
+
+@media (min-width: 600px) {
+  * {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 750px) {
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(0);
+    width: auto;
+    height: 60%;
+    top:25%;
+    right: 1em;
+    border: none;
+    box-shadow: 0 0 0;
+  }
+  .gg-menu-motion {
+    display: none;
+  }
+  .nav-logo {
+    display: none;
+  }
+  .gg-close {
+    display: none;
+  }
+  .logo {
+    display: inline;
+  }
+  .logo img{
+    width:20vw;
+  }
+  .nav-middle {
+    flex-direction: row;
+    float: left;
+  }
+  .nav-middle li {
+    float: left;
+    margin: 0 1em;
+  }
+  .nav-right{
+    display: inline-block;
+  }
+  .nav-right li{
+    padding-left: 1em;
+  }
+  .search-cont{
+    display: inline;
+    margin: 0;
+  }
+}
+
