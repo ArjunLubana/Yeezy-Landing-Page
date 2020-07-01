@@ -1,85 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adidas Online Store| Home Page</title>
 
-    <link href="css/icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
-</head>
+    <link href="css/icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="background"></div>
-        <i class="gg-menu-motion" onclick="toggleMenu()"></i>
+      <div class="background"></div>
+      <i class="gg-menu-motion" onclick="toggleMenu()"></i>
 
-        <div class="logo">
-            <img src="images/logo2.png" alt="logo">
+      <div class="logo">
+        <img src="images/logo2.png" alt="logo" />
+      </div>
+      <nav id="nav">
+        <i class="gg-close" onclick="toggleMenuOff()"></i>
+        <img class="nav-logo" src="images/logo.png" alt="logo2" />
+        <div class="nav-middle">
+          <div class="search-cont">
+            <a href="#"><i class="gg-search"></i></a>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Catalogue</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
         </div>
-        <nav id="nav">
-            <i class="gg-close" onclick="toggleMenuOff()"></i>
-            <img class="nav-logo" src="images/logo.png" alt="logo2">
-            <div class="nav-middle">
-                <div class="search-cont">
-                    <a href="#"><i class="gg-search"></i></a>
-                </div>
-                <ul class=nav-list>
-                    <li><a href="#">Collection</a></li>
-                    <li><a href="#">Catalogue</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
 
-            <div class="nav-right">
-                <ul class="nav-list">
-                    <li><a href="#"><i class="gg-profile"></i></a></li>
-                    <li><a href="#"><i class="gg-shopping-cart"></i></a></li>
-                </ul>
-            </div>
-        </nav>
-
-
+        <div class="nav-right">
+          <ul class="nav-list">
+            <li>
+              <a href="#"><i class="gg-profile"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="gg-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <section class="main">
-        <div class="tone-1">
-            <div class="product-info">
-                <h1> YEEZY BOOST 350 V2</h1>
-                <p>New and Improved</p>
-            </div>
+      <div class="tone-1">
+        <div class="product-info">
+          <h1>YEEZY BOOST 350 V2</h1>
+          <p>New and Improved</p>
         </div>
+      </div>
 
-        <div class="tone-2">
-            <img id="main-image" src="images/image1.png" alt="shoe">
-        </div>
+      <div class="tone-2">
+        <img id="main-image" src="images/image1.png" alt="shoe" />
+      </div>
 
-        <div class="shoe-gallery">
-            <img onclick="imageToggle('image1')" id="image1" src="images/image1.png" alt="shoe">
-            <img onclick="imageToggle('image2')" id="image2" src="images/image2.png" alt="shoe">
-            <img onclick="imageToggle('image3')" id="image3" src="images/image3.png" alt="shoe">
-            <img onclick="imageToggle('image4')" id="image4" src="images/image4.png" alt="shoe">
-        </div>
+      <div class="shoe-gallery">
+        <img
+          onclick="imageToggle('image1')"
+          id="image1"
+          src="images/image1.png"
+          alt="shoe"
+        />
+        <img
+          onclick="imageToggle('image2')"
+          id="image2"
+          src="images/image2.png"
+          alt="shoe"
+        />
+        <img
+          onclick="imageToggle('image3')"
+          id="image3"
+          src="images/image3.png"
+          alt="shoe"
+        />
+        <img
+          onclick="imageToggle('image4')"
+          id="image4"
+          src="images/image4.png"
+          alt="shoe"
+        />
+      </div>
 
-        <div class="info-bins">
-            <h2>$230</h2><br>
-            <a href="#" class="btn-discover-btn"><i class="gg-shopping-cart"></i>ADD TO CART</a>
-            <a href="#" class="btn-discover-btn">DISCOVER</a>
-        </div>
-
+      <div class="info-bins">
+        <h2>$230</h2>
+        <br />
+        <a href="#" class="btn-discover-btn"
+          ><i class="gg-shopping-cart"></i>ADD TO CART</a
+        >
+        <a href="#" class="btn-discover-btn">DISCOVER</a>
+      </div>
     </section>
 
     <footer>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="gg-adidas"></div>Official Brand
+      <div class="footer-pages">
+        <div><a href="#">Lorem</a><br> <a href="#">ipsum</a><br> <a href="#">dolor</a><br>  <a href="#">sit amet</a><br> <a href="#">consectetur</a><br> <a href="#">adipisicing</a><br> </div><br>
 
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+        <div><a href="#">Lorem</a><br> <a href="#">ipsum</a><br> <a href="#">dolor</a><br>  <a href="#">sit amet</a><br> <a href="#">consectetur</a><br> <a href="#">adipisicing</a><br> </div><br>
 
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div><a href="#">Lorem</a><br> <a href="#">ipsum</a><br> <a href="#">dolor</a><br>  <a href="#">sit amet</a><br> <a href="#">consectetur</a><br> <a href="#">adipisicing</a><br> </div>
+      </div><br>
+
+      <div class="footer-links">
+        <a href="#"><i class="gg-facebook"></i></a>
+        <a href="#"><i class="gg-twitter"></i></a>
+        <a href="#"><i class="gg-instagram"></i></a>
+      </div><br>
+
+      <p class = "copyright">© 2006 - 2019 Yeezy LLC. All rights reserved.</p>
     </footer>
-</body>
-<script src="scripts/script.js"></script>
-
+  </body>
+  <script src="scripts/script.js"></script>
 </html>

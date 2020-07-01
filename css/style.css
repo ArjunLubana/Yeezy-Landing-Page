@@ -1,175 +1,197 @@
+/* *****DEFAULT VALUES ***** */
 
-
-        /* *****DEFAULT VALUES ***** */
-
-
-:root{
-    --content-color:black;
+:root {
+  --content-color: black;
 }
 
 * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
-        /* ***** HEADER AND NAVIGATION ***** */
+/* ***** HEADER AND NAVIGATION ***** */
 
-
-header{
-    position: sticky;
-    top:0;
-    padding-top: .25em;
+header {
+  position: sticky;
+  top: 0;
+  padding-top: 0.25em;
 }
 
-.logo{
-    display:flex;
-    justify-content: center;
-    padding:.5rem 0;    
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
 }
 
-.logo img{
-    position: relative;
-    width:30vw;
-    height: auto;
+.logo img {
+  position: relative;
+  width: 30vw;
+  height: auto;
 }
-.background{
-    position:absolute;
-    top:0;
-    width: 100%;
-    height:100%;
-    background: white;
-    filter: blur(10px);
-    
+.background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  filter: blur(10px);
 }
 /* Navigation */
 
-nav{
-    background-color: white;
-    position: absolute;
-    top:0;
-    height:100vh;
-    width:50vw;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    border: 0 solid var(--content-color);
-    border-radius: 0 10px 10px 0;
-    box-shadow: 0px 0px 10px;
-    transform: translateX(-110%);
-    transition: transform 0.5s ease-in-out;
+nav {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 50vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 0 solid var(--content-color);
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0px 0px 10px;
+  transform: translateX(-110%);
+  transition: transform 0.5s ease-in-out;
 }
-.active{
-    transform: translateX(0%);
+.active {
+  transform: translateX(0%);
 }
 
-.nav-list{
-    list-style-type: none;
+.nav-list {
+  list-style-type: none;
 }
-.nav-list a{
-    text-decoration: none;
-    color: inherit;
+.nav-list a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Adidas Yeezy Logo */
-.nav-logo{
-    width:30vw;
-    height: auto;
+.nav-logo {
+  width: 30vw;
+  height: auto;
 }
 
 /* Middle Navigation */
-.nav-middle{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    font-weight: 500;
-    text-transform: uppercase;
+.nav-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
 }
-.gg-search{
-    color:var(--content-color);
+.gg-search {
+  color: var(--content-color);
 }
-.search-cont{
-    margin-bottom: 1rem;
+.search-cont {
+  margin-bottom: 1rem;
 }
-.nav-middle li{
-    margin: 1rem;
+.nav-middle li {
+  margin: 1rem;
 }
 
 /* Right Navigation */
-.nav-right ul{
-    display: flex;
-    justify-content: space-between;
+.nav-right ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ***** MAIN PAGE ***** */
+
+.main {
+  display: block;
+}
+
+.tone-1 {
+  text-align: center;
+  margin: 2em;
+  font-size: 20px;
+}
+
+.tone-2 img {
+  width: 100%;
+  height: auto;
+}
+
+.info-bins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.info-bins a {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  background-color: var(--content-color);
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  border-radius: 5px;
+  color: white;
+}
+
+.shoe-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.shoe-gallery img {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.shoe-gallery img:hover {
+  transform: scale(1.1);
+}
+
+.active-image {
+  opacity: 0.7;
+}
+
+/* ***** FOOTER ***** */
+
+footer {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: var(--content-color);
+  color:white;
+  text-align: center;
 }
 
 
-        /* ***** MAIN PAGE ***** */
-
-.main{
-    display: block;
+.footer-pages{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
 }
 
-.tone-1{
-    text-align:center;
-    margin:2em;
-    font-size:20px;
+.footer-pages a{
+  text-decoration:none;
+  color:white;
+  line-height: 2em;
+}
+.footer-pages a:hover{
+  color: yellow;
 }
 
-.tone-2 img{
-    width:100%;
-    height:auto;
+.footer-links{
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.info-bins{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3em;
+.footer-links a{
+  color:white;
 }
 
-.info-bins a{
-    display: flex;
-    align-items:baseline;
-    text-decoration: none;
-    background-color: var(--content-color);
-    justify-content: space-between;
-    padding: .5em 1em;
-    margin:.5em;
-    border-radius: 5px;
-    color: white;
+.footer-links a:hover{
+  color:yellow;
 }
 
-.shoe-gallery{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-}
-
-.shoe-gallery img{
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-}
-.shoe-gallery img:hover{
-    transform: scale(1.1);
-}
-
-.active-image{
-    opacity: .7;
-}
-
-        /* ***** FOOTER ***** */
-
-footer{
-    margin-top: 2em;
-    background-color: var(--content-color);
-    color: white;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-}
-footer div{
-    padding:2em 1em;
+.copyright{
+  font-size: 0.7em;
 }
