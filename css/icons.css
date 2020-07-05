@@ -2,8 +2,8 @@
 
 .gg-menu-motion {
   position: absolute;
-  width: 2rem;
-  height: 2rem;
+  width: 2em;
+  height: 2em;
   cursor: pointer;
   left:5%;
 }
@@ -11,19 +11,19 @@
 .gg-menu-motion::before {
   content: "";
   position: absolute;
-  width: 1rem;
-  height: 0.2rem;
+  width: 1em;
+  height: 0.2em;
   bottom:40%;
   top:60%;
-  box-shadow: 0.25rem -0.375rem 0, 0.5rem -0.75rem 0;
-  border-radius: 0.25rem;
+  box-shadow: 0.25em -0.375em 0, 0.5em -0.75em 0;
+  border-radius: 0.25em;
   background: currentColor;
   transition: all 500ms ease;
 }
 
 .gg-menu-motion:hover::before {
-  width: 1.5rem;
-  box-shadow: 0 -0.375rem 0, 0 -0.75rem 0;
+  width: 1.5em;
+  box-shadow: 0 -0.375em 0, 0 -0.75em 0;
   transition: all 500ms ease;
 }
 
@@ -34,8 +34,8 @@
   position: relative;
   display: block;
   transform: scale(var(--ggs, 1));
-  width: 1.375rem;
-  height: 1.375rem;
+  width: 22px;
+  height: 22px;
   border: 2px solid transparent;
   border-radius: 40px;
   cursor: pointer;
@@ -48,12 +48,12 @@
   display: block;
   box-sizing: border-box;
   position: absolute;
-  width: 1.375rem;
-  height: 0.1875rem;
+  width: 22px;
+  height: 3px;
   background: currentColor;
   transform: rotate(45deg);
   border-radius: 5px;
-  top: 0.5rem;
+  top: 8px;
   left: 1px;
 }
 
@@ -77,8 +77,8 @@
   position: relative;
   display: block;
   transform: scale(var(--ggs, 1));
-  width: 1rem;
-  height: 1rem;
+  width: 16px;
+  height: 16px;
   border: 2px solid;
   border-radius: 100%;
   margin-left: -4px;
@@ -88,9 +88,9 @@
 .gg-search::after {
   content: "";
   position: absolute;
-  border-radius: 0.1875rem;
-  width: 0.125rem;
-  height: 0.5rem;
+  border-radius: 3px;
+  width: 2px;
+  height: 8px;
   background: currentColor;
   transform: rotate(-45deg);
   top: 10px;
@@ -111,8 +111,8 @@
 .gg-profile {
   overflow: hidden;
   transform: scale(var(--ggs, 1));
-  width: 1.375rem;
-  height: 1.375rem;
+  width: 22px;
+  height: 22px;
   position: relative;
 }
 
@@ -122,8 +122,8 @@
   position: absolute;
   top: 2px;
   left: 5px;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 8px;
+  height: 8px;
 }
 
 .gg-profile::after {
@@ -172,7 +172,7 @@
 .gg-shopping-cart::after {
   height: 10px;
   top: 6px;
-  left: 1rem;
+  left: 16px;
   transform: skew(-12deg);
 }
 
@@ -196,7 +196,7 @@
 }
 
 .gg-facebook::before {
-  width: 0.5rem;
+  width: 8px;
   height: 20px;
   border-left: 4px solid;
   border-top: 4px solid;
@@ -235,15 +235,15 @@
 
 .gg-instagram::after {
   border: 2px solid;
-  left: 0.1875rem;
+  left: 3px;
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  top: 0.1875rem;
+  top: 3px;
 }
 
 .gg-instagram::before {
-  border-radius: 0.1875rem;
+  border-radius: 3px;
   width: 2px;
   height: 2px;
   background: currentColor;
